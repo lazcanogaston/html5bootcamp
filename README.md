@@ -31,14 +31,15 @@ Are you ready for it?
 
     * [Topic 2: OOP and Inheritance in JavaScript](#topic2)
 
-    * [Topic 3: MVC - AngularJS](#topic3)
+    * [Topic 3: HTML5 APIs](#topic3)
 
-    * [Topic 4: HTML5 APIs](#topic4)
+    * [Topic 4: UI - ReactJS](#topic4)
 
-    * [Topic 5: UI - ReactJS](#topic5)
+    * [Topic 5: MVC - AngularJS](#topic5)
 
 
 10. [Your First Project Starts Now](#your-first-project-starts-now)
+11. [Moving Forward](#forward)
 
 ### **Objective**
 
@@ -57,20 +58,20 @@ A basic knowledge on HTML, CSS, and JavaScript is desired, though.
 
 ### **Duration**
 
-Five weeks total.
+Four/five weeks total.
 
-Three weeks for guided learning and two weeks for app development.
+Three weeks for guided learning and one/two weeks for app development.
 
 → [index](#index)
 
 ### **Technical Assistance**
 
 You can contact other bootcamp participants or any available tutor if you need technical assistance.
-We will create one chat for bootcamp members only, and another one for boot camp members and tutors when boot camp starts.
+We will create one chat for bootcamp members only, and another one for bootcamp members and tutors when bootcamp starts.
 
 ### **Performance Measurement**
 
-1.  Code review after each practice and sprint
+1.  Code reviews after each practice and sprint
 
 2.  Checkpoint completion after Learning stage with your assigned tutor
 
@@ -79,13 +80,13 @@ We will create one chat for bootcamp members only, and another one for boot camp
 
 ### **Handling Advanced Developers**
 
-Developers that move faster than average can go ahead and complete as much exercises as wanted.
+Developers that move faster than average can go ahead and complete as much exercises as they want.
 
 → [index](#index)
 
 ### **Tools**
 
-1.  At least, three different browsers installed on the developer machine.As Example:
+1.  At least, three different browsers installed on the developer machine. As Example:
 
     *   Chrome
     *   Firefox
@@ -94,9 +95,9 @@ Developers that move faster than average can go ahead and complete as much exerc
 
 2.  Any IDE available for Web Development.
 
-    *   [SublimeText](http://www.sublimetext.com/)
-    *   [Visual Studio Code](https://code.visualstudio.com/)
     *   [Atom](https://atom.io/)
+    *   [Visual Studio Code](https://code.visualstudio.com/)
+    *   [SublimeText](http://www.sublimetext.com/)
 
 3.  Google Hangouts for calls. Skype might be required too.
 
@@ -126,7 +127,7 @@ The boot camp is organized in the following way:
 
 3.  All the exercises must work within a mobile environment.
 
-4.  Team play is encouraged but the work will be evaluated per person.
+4.  Team play is encouraged but the work might be evaluated per person (depending on number of bootcamp students).
 
 5.  All code and documentation must be in English.
 
@@ -146,7 +147,7 @@ On each learning day you will have to:
     Most important task numbers are listed in the "*Key Points*" section for each day and they should get most of your attention.
     If you feel you don’t have enough time to complete all tasks, start with these ones when possible.
 
-3.  **Commit:** YOu will commit all your code as soon as you finish each exercise. If not you must commit your work in a daily basis.
+3.  **Commit:** You will commit all your code as soon as you finish each exercise. If not you must commit your work in a daily basis.
 
 #### **Introduction**
 
@@ -172,23 +173,23 @@ This topic is hosted in a different repository, you can find it in [HTML & CSS B
 
 **Reading**
 
-1.  Beginner: Eloquent JavaScript 2nd Edition [basic tutorial](http://eloquentjavascript.net/) (in case you need it!)
+1.  Beginner: Eloquent JavaScript 2nd Edition [basic tutorial](https://eloquentjavascript.net/) (in case you need it!)
 
 2.  Beginner to advance: [Speaking JavaScript: An In-Depth Guide for Programmers](http://speakingjs.com/)
 
-3.  Recommended: [devdocs.io](http://devdocs.io/) to check Web platform documentation around JavaScript, frameworks, Browser APIs, etc
+3.  Recommended: [devdocs.io](https://devdocs.io/) to check Web platform documentation around JavaScript, frameworks, Browser APIs, etc
 
 **Extra documentation**
 
-*   Web Platform Documentation Project: [http://www.webplatform.org/](http://www.webplatform.org/)
-
 *   MDN JavaScript Reference: [https://developer.mozilla.org/en/JavaScript/Reference](https://developer.mozilla.org/en/JavaScript/Reference)
+
+*   Web Platform Documentation Project: [https://webplatform.github.io/](https://webplatform.github.io/)
 
 *   Understanding ECMAScript 6: [https://leanpub.com/understandinges6/read](https://leanpub.com/understandinges6/read)
 
-*   [ECMAScript® 2015 Language Specification](http://www.ecma-international.org/ecma-262/6.0/) *For really advanced developers*
+*   [ECMAScript® 2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/) *For really advanced developers*
 
-*   JSONP and CORS: [http://json-p.org/](http://json-p.org/) - [http://www.html5rocks.com/en/tutorials/cors/](http://www.html5rocks.com/en/tutorials/cors/)
+*   CORS: [https://www.html5rocks.com/en/tutorials/cors/](https://www.html5rocks.com/en/tutorials/cors/)
 
 *   Using Chrome console to debug JavaScript [https://developer.chrome.com/devtools/docs/console](https://developer.chrome.com/devtools/docs/console)
 
@@ -272,7 +273,7 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
 4. Read about [ES6 Modules](https://ponyfoo.com/articles/es6-modules-in-depth)  
 
-5. Extra: Read about AMD, CommonJS, and ES6 Modules [Writing Modular JavaScript](http://addyosmani.com/blog/writing-modular-javascript/)
+5. Extra: Read about AMD, CommonJS, and ES6 Modules [Writing Modular JavaScript](https://addyosmani.com/blog/writing-modular-javascript/)
 
 6. An overview on all the features ECMAScript provides [https://github.com/lukehoban/es6features](https://github.com/lukehoban/es6features)
 
@@ -346,13 +347,13 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
         The `off` method will delete previously defined event listeners.
 
-2.  Class heritage
+2.  Class inheritance
 
     *   Make the Movie class a subclass of EventEmitter and use the inherited methods to publish `play`, `pause` and `resume` events when the related method is called.
 
 3.  Working with classes
 
-    *   Add a method to Movie as `addCast(cast)` that allows the addition of one or more Actors to a move. It must accept if provided more than one Actor at the same time.
+    *   Add a method to Movie as `addCast(cast)` that allows the addition of one or more Actors to a movie. It must work if provided with more than one Actor at the same time.
 
         You should be able to do something like
 
@@ -427,40 +428,7 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
 → [index](#index)
 
-<h4 id="topic3">Topic 3 - MVC AngularJS</h4>
-
-**Reading**
-
-1. [Ultimate guide to learn Angular.js in one day](http://toddmotto.com/ultimate-guide-to-learning-angular-js-in-one-day/).
-
-2. Read Angular.js's [Developers Guide](https://docs.angularjs.org/guide).
-
-3. Check your code to comply with Angular.js's [Best Practices](https://github.com/angular/angular.js/wiki/Best-Practices).
-
-4. Check your code to avoid Angular.js's [Anti-patterns](https://github.com/angular/angular.js/wiki/Anti-Patterns)
-
-5. Learn how to create unit tests for your angular.js applications [https://docs.angularjs.org/guide/unit-testing](https://docs.angularjs.org/guide/unit-testing)
-
-**Practice**
-
-1. Create a movie listing with your favorite movies. Data shall be persisted in localhost.
-
-2. Show movie details in a separate details view.
-
-3. Allow to add / edit / remove movies from the list.
-
-4. Configure Karma and write tests for your application.
-
-Tips:
-* Learn how to use [components](https://docs.angularjs.org/guide/component) to structure your application
-
-**Key Points**
-
-1, 2, 3
-
-→ [index](#index)
-
-<h4 id="topic4">Topic 4 - HTML5 APIs</h4>
+<h4 id="topic3">Topic 3 - HTML5 APIs</h4>
 
 **Reading**
 
@@ -508,29 +476,23 @@ Tips:
 
 → [index](#index)
 
-<h4 id="topic5">Topic 5 - UI ReactJS</h4>
+<h4 id="topic4">Topic 4 - ReactJS</h4>
 
 **Reading**
 
-1. [What is ReactJS?](http://facebook.github.io/react/). [Here](http://www.instrument.com/latest/an-introduction-to-react-js) is an introduction to it.
+1. First [ReactJS Hello World](https://reactjs.org/docs/hello-world.html) then [Thinking in React](https://reactjs.org/docs/thinking-in-react.html).
 
-2. First [get started with ReactJS](https://facebook.github.io/react/docs/getting-started.html) then [Think in React](https://facebook.github.io/react/docs/thinking-in-react.html).
+2. Understand [Props & States](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md).
 
-3. Understand [Props & States](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md).
+3. Install [Create React App](https://github.com/facebook/create-react-app) and get familiar with it.
 
 4. Read about some ReactJS's [Best Practices, Patterns & Anti-patters](https://github.com/planningcenter/react-patterns).
 
-5. Check some ReactJS's [Test utils](https://facebook.github.io/react/docs/test-utils.html).
-
-6. Try on using [Reactify](https://github.com/andreypopp/reactify) [ReactJS + Browserify workflow](https://www.codementor.io/reactjs/tutorial/react-js-browserify-workflow-part-1).
-
-7. [Redux](http://redux.js.org/docs/introduction/)
+5. Check some ReactJS's [Test utilities](https://reactjs.org/docs/test-utils.html).
 
 **Extra reading**
 
 * [Full guide on ReactJS](https://scotch.io/tutorials/learning-react-getting-started-and-concepts).
-
-* [Read some ReactJS tips](https://facebook.github.io/react/tips/introduction.html).
 
 
 **Practice**
@@ -543,16 +505,12 @@ Tips:
 
 4. Update the movie listing to allow the user delete movies.
 
-5. Update the application to use Redux
-
-6. Update the application to use ReactRouter
+5. Refactor the application to use Redux
 
 **Tips**
 - First, try to think which should be your app structure (in terms of components).
 - Second, figure out which component should handle the movies.
 - You should create a component when trying to create a view (a view is also a component).
-- To update the application with ReactRouter and Flux you may split out the add logic and the display logic into two views.
-  Also you may provide the data storage (object) responsibility to Flux's storages.
 
 **Key Points**
 
@@ -560,11 +518,43 @@ Tips:
 
 → [index](#index)
 
+<h4 id="topic5">Topic 5 - Angular</h4>
+
+**Reading**
+
+1. Read Angular's [Tutorial](https://angular.io/tutorial) and the [QuickStart guide](https://angular.io/guide/quickstart).
+
+2. [Creating your first Angular 2+ component](https://toddmotto.com/creating-your-first-angular-2-component).
+
+3. Check your code to comply with Angular's [Style Guide](https://angular.io/guide/styleguide).
+
+4. Learn how to create unit tests for your angular applications [https://angular.io/guide/testing](https://angular.io/guide/testing)
+
+5. [Codecraft tutorial on Angular 5](https://codecraft.tv/courses/angular/quickstart/overview/)
+
+6. Get familiar with the [Angular CLI](https://github.com/angular/angular-cli) tool.
+
+**Practice**
+
+1. Create a movie listing with your favorite movies. Data should be persisted in localhost.
+
+2. Show movie details in a separate details view.
+
+3. Allow to add / edit / remove movies from the list.
+
+4. Configure Jasmine+karma and write tests for your application.
+
+**Key Points**
+
+1, 2, 3
+
+→ [index](#index)
+
 ### Your First Project Starts Now
 
 **It’s time for the real thing**
 
-You will work on a project to achieve a fully working multi platform mobile app developed in JavaScript and using the latest tags and APIs available in HTML5.
+You will work on a project to achieve a fully working mobile web app developed in JavaScript and using the latest tags and APIs available in HTML5.
 
 You will apply all the knowledge obtained during the learning weeks.
 
@@ -575,5 +565,18 @@ You will be able to use any resource you know that helps you complete your proje
 **Reviews**
 
 Tutors will give you feedback at the end of the project by reviewing and commenting your committed code in GitHub.
+
+→ [index](#index)
+
+
+<h3 id="forward">Moving Forward</h3>
+
+Here's a list of resources, tools and tips to continue your learning path. This is meant for more advanced students and developers who wish to continue learning and need a little guidance. Feel free to play with them!
+
+- [Learning Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [Introduction to React Router](https://github.com/ReactTraining/react-router/blob/v3/docs/Introduction.md)
+- [Understanding redux](https://redux.js.org/introduction/motivation)
+- [Observables in Angular](https://angular.io/guide/observables)
+- [Webpack concepts](https://webpack.js.org/concepts/) and the [webpack getting started guide](https://webpack.js.org/guides/getting-started/)
 
 → [index](#index)

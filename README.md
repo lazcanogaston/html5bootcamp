@@ -494,6 +494,9 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
 * [Full guide on ReactJS](https://scotch.io/tutorials/learning-react-getting-started-and-concepts).
 
+* Readings on lifecycle methods: [React Lifecycle Methods- how and when to use them](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1),
+[Understanding the React Component Lifecycle](http://busypeoples.github.io/post/react-component-lifecycle/)
+
 
 **Practice**
 

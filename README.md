@@ -29,16 +29,18 @@ Are you ready for it?
 
     * [Topic 1: JavaScript, and DOM APIs](#topic1)
 
-    * [Topic 2: OOP and Inheritance in JavaScript](#topic2)
+    * [Topic 2: Design Patterns and OOP in JavaScript](#topic2)
 
     * [Topic 3: HTML5 APIs](#topic3)
 
     * [Topic 4: UI - ReactJS](#topic4)
 
-    * [Topic 5: MVC - AngularJS](#topic5)
-
+    * [Topic 5: Unit Tests](#topic5)
+    
+    * [Topic 6: MVC - AngularJS](#topic6) *(Optional)*
 
 10. [Your First Project Starts Now](#your-first-project-starts-now)
+
 11. [Moving Forward](#forward)
 
 ### **Objective**
@@ -77,7 +79,6 @@ We will create one chat for bootcamp members only, and another one for bootcamp 
 
 → [index](#index)
 
-
 ### **Handling Advanced Developers**
 
 Developers that move faster than average can go ahead and complete as much exercises as they want.
@@ -90,8 +91,7 @@ Developers that move faster than average can go ahead and complete as much exerc
 
     *   Chrome
     *   Firefox
-    *   Android browser using Android's emulator
-
+    *   IE11 (Keep in mind [cross browser compatibility](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Introduction))
 
 2.  Any IDE available for Web Development.
 
@@ -99,7 +99,7 @@ Developers that move faster than average can go ahead and complete as much exerc
     *   [Visual Studio Code](https://code.visualstudio.com/)
     *   [SublimeText](http://www.sublimetext.com/)
 
-3.  Google Hangouts for calls. Skype might be required too.
+3.  Google Hangouts for calls. Slack channel for questions.
 
 4.  Create your own [GitHub](https://github.com/) account. Follow this [guideline](https://help.github.com/articles/set-up-git) to setup your account.
 
@@ -111,7 +111,7 @@ Developers that move faster than average can go ahead and complete as much exerc
     *   To start the server, from a command line interface, run `http-server` in the directory where you will clone the startup repo.
     *   Open your web browser and point to localhost:PORT (the `http-server` should have outputted the number of PORT you should use)
 
-7.  Fork [Startup repository](https://github.com/globant-ui/startup) to use as a base to host the project code.
+7.  Fork [Startup repository](https://github.corp.globant.com/ui-engineering/startup) to use as a base to host the project code.
 
 → [index](#index)
 
@@ -165,11 +165,16 @@ Now that you know which are the three pilars of a web application's UI, it's tim
 
 <h4 id="topic0">Topic 0 - HTML & CSS Basics</h4>
 
-This topic is hosted in a different repository, you can find it in [HTML & CSS Basics](https://github.com/globant-ui/css-lab)
+This topic is hosted in a different repository, you can find it in [HTML & CSS Basics](https://github.corp.globant.com/ui-engineering/html-css-lab)
+
+**Some resources**
+
+*   [htmlreference.io](https://htmlreference.io/)
+*   [cssreference.io](https://cssreference.io/)
 
 → [index](#index)
 
-<h4 id="topic1">Topic 1 - JavaScript, and DOM APIs</h4>
+<h4 id="topic1">Topic 1 - JavaScript and DOM APIs</h4>
 
 **Reading**
 
@@ -188,6 +193,12 @@ This topic is hosted in a different repository, you can find it in [HTML & CSS B
 *   Understanding ECMAScript 6: [https://leanpub.com/understandinges6/read](https://leanpub.com/understandinges6/read)
 
 *   [ECMAScript® 2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/) *For really advanced developers*
+
+*   [Exploring ES2018 and ES2019](http://exploringjs.com/es2018-es2019/toc.html), if you want to know more about future new features in Javascript.
+
+*   [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript), to keep in mind good practices.
+
+*   [You Don't Know JS Books](https://github.com/getify/You-Dont-Know-JS), if you want to go deeper into Javascript logic.
 
 *   CORS: [https://www.html5rocks.com/en/tutorials/cors/](https://www.html5rocks.com/en/tutorials/cors/)
 
@@ -224,7 +235,7 @@ This topic is hosted in a different repository, you can find it in [HTML & CSS B
 
     *   Write the response inside the `section` element.
 
-    *   Create a reusable function to perform AJAX calls. This function must accept a `config` object and return an ES6 Promise.
+    *   Create a reusable function to perform AJAX calls. This function must accept a `config` object and return an ES6 [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises).
 
     *   If a server error occurs `section` content must turn red.
 
@@ -271,7 +282,7 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
 3. Read the Chapter on JavaScript classes from [*Understanding ECMAScript6*](https://leanpub.com/understandinges6/read#leanpub-auto-classes)
 
-4. Read about [ES6 Modules](https://ponyfoo.com/articles/es6-modules-in-depth)  
+4. Read about [ES6 Modules](https://ponyfoo.com/articles/es6-modules-in-depth)
 
 5. Extra: Read about AMD, CommonJS, and ES6 Modules [Writing Modular JavaScript](https://addyosmani.com/blog/writing-modular-javascript/)
 
@@ -349,7 +360,7 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
 2.  Class inheritance
 
-    *   Make the Movie class a subclass of EventEmitter and use the inherited methods to publish `play`, `pause` and `resume` events when the related method is called.
+    *   Make the Movie class a subclass of [EventEmitter](https://netbasal.com/javascript-the-magic-behind-event-emitter-cce3abcbcef9) and use the inherited methods to publish `play`, `pause` and `resume` events when the related method is called.
 
 3.  Working with classes
 
@@ -468,7 +479,7 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
     *   Create a web page with a canvas element. Upon page load draw basic geometric figures with random colors and strokes.
 
-    *   Using the Canvas API, animate a rectangle's position on the screen. Make sure not to use setTimeout but requestTimeFrame to perform the animation.
+    *   Using the Canvas API, animate a rectangle's position on the screen. Make sure not to use setTimeout but setInterval to perform the animation.
 
 **Key Points**
 
@@ -490,13 +501,14 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
 5. Check some ReactJS's [Test utilities](https://reactjs.org/docs/test-utils.html).
 
+6. Check the [Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux) video series, to understand the basic concepts of this state container.
+
 **Extra reading**
 
 * [Full guide on ReactJS](https://scotch.io/tutorials/learning-react-getting-started-and-concepts).
 
 * Readings on lifecycle methods: [React Lifecycle Methods- how and when to use them](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1),
 [Understanding the React Component Lifecycle](http://busypeoples.github.io/post/react-component-lifecycle/)
-
 
 **Practice**
 
@@ -508,7 +520,7 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
 4. Update the movie listing to allow the user delete movies.
 
-5. Refactor the application to use Redux
+5. Refactor the application to use [Redux](https://redux.js.org/).
 
 **Tips**
 - First, try to think which should be your app structure (in terms of components).
@@ -517,11 +529,41 @@ ECMAScript6 provides a layer of syntactic sugar over the previous version (5.1) 
 
 **Key Points**
 
-1, 2, 5
+1, 2, 5, 6
 
 → [index](#index)
 
-<h4 id="topic5">Topic 5 - Angular</h4>
+<h4 id="topic5">Topic 5 - Unit Tests</h4>
+
+In this topic you will learn how to develop unit tests for your React components, for this purpose we will use the following libraries:
+
+* [Mocha](https://mochajs.org/) as test runner
+* [Chai](http://www.chaijs.com/) as an assertions library
+* and [Enzyme](https://github.com/airbnb/enzyme), which is a testing utility that will make it easier to acccess to React components
+
+**Reading**
+
+1. Read this [React Testing Tutorial](https://www.robinwieruch.de/react-testing-tutorial/), to understand and set it up the different tools that you are going to use for this practice. There are more testing utilities explained in the tutorial, if you want to learn more about unit and integration tests.
+
+2. Learn [The right way to test React components](https://medium.freecodecamp.org/the-right-way-to-test-react-components-548a4736ab22), to understand the main points of unit testing in React. 
+
+**Extra reading**
+
+* Get to know Enzyme purpose [https://medium.com/airbnb-engineering/enzyme-javascript-testing-utilities-for-react-a417e5e5090f](https://medium.com/airbnb-engineering/enzyme-javascript-testing-utilities-for-react-a417e5e5090f)
+
+**Practice**
+
+1. Using the components created in Topic 4, define which components and functions might need Unit tests and the test cases you want to cover.
+
+2. Implement the unit tests using Mocha, Chai and Enzyme.
+
+**Tips**
+
+Remember that unit tests are used to test the functionality of each component separately, checking that each part of your code is doing its job in the right way.
+
+→ [index](#index)
+
+<h4 id="topic6">Topic 6 - Angular</h4>
 
 **Reading**
 
